@@ -1,12 +1,6 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-
 public class WelcomeServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -14,9 +8,10 @@ public class WelcomeServlet extends HttpServlet {
 
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		
-		String n=request.getParameter("userName");
-		out.print("Welcome "+n);
+
+		String n = request.getParameter("userName");
+		out.print("Welcome " + n);
+		out.print("Welcome11111 " + n);
 	}
 
 }
