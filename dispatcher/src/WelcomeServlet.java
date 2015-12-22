@@ -6,7 +6,7 @@ public class WelcomeServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		response.setContentType("text/html");
-
+		;
 		out.print("Welcome " + n);
 	}
 
